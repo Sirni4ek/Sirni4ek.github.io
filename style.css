@@ -1,0 +1,44 @@
+body {
+        font-family: Arial, sans-serif; /* Set a pleasant font */
+        margin: 50px; /* Add some margin around the content */
+      }
+
+      h1,
+      h2 {
+        text-align: center; /* Center align headings */
+        margin-bottom: 20px; /* Add space between headings and content */
+      }
+
+      h1 {
+        font-size: 2em; /* Make the main heading slightly larger */
+      }
+
+      p {
+        line-height: 1.5; /* Increase line spacing for better readability */
+      }
+
+      ul {
+        list-style: none; /* Remove default bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        text-align: center; /* Center align the list */
+      }
+
+      li {
+        display: inline-block; /* Display list items inline for horizontal layout */
+        margin: 10px; /* Add space between list items */
+      }
+
+      a {
+        color: #007bff; /* Set link color to blue */
+        text-decoration: none; /* Remove underline from links */
+      }
+
+      a:hover {
+        color: #0056b3; /* Change link color on hover */
+        text-decoration: underline; /* Add underline on hover */
+      }
+
+      .you-are-here {
+        font-weight: bold; /* Make the "you are here" link bold */
+      }
