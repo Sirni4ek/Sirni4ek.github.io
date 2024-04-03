@@ -1,14 +1,13 @@
+
+
 <html>
 <head>
-  <title>PHP Test</title>
+  <title>Color Picker Test</title>
   <script src="utility.js"></script>
 </head>
 <body>
 
-
 <div id=HistoryList>
-
-
     <br>
 </div>
 
@@ -25,9 +24,9 @@
  <option value=mm>mm</option>
     <!-- exercise 6 -->
   </select>
-
+  
   <br>
-
+  
   font color:
   <select id=color name=color>
     <option style="background-color: purple" value=purple>purple</option>
@@ -54,9 +53,10 @@
   </select>
 
   <br>
-  <input id=submit type=submit onclick="SaveSetting()">
+  <input id=submit type=button onclick="SaveSetting(); return 0" value="Preview">
 </form>
 
+  <div id="preview"></div>
 
   </body>
 </html>
