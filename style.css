@@ -1,47 +1,51 @@
-h1 {
-        color: orange;
-}
 body {
-        font-family: Arial, sans-serif; /* Set a pleasant font */
-        margin: 50px; /* Add some margin around the content */
-      }
+  font-family: "Open Sans", sans-serif; /* Modern font from Google Fonts */
+  margin: 2rem; /* Use rem unit for responsive scaling */
+}
 
-      h1,
-      h2 {
-        text-align: center; /* Center align headings */
-        margin-bottom: 20px; /* Add space between headings and content */
-      }
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-      h1 {
-        font-size: 2em; /* Make the main heading slightly larger */
-      }
+h1 {
+  font-size: 2.5rem; /* Larger main heading */
+}
 
-      p {
-        line-height: 1.5; /* Increase line spacing for better readability */
-      }
+p {
+  line-height: 1.6;
+}
 
-      ul {
-        list-style: none; /* Remove default bullet points */
-        padding: 0; /* Remove default padding */
-        margin: 0; /* Remove default margin */
-        text-align: center; /* Center align the list */
-      }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center align items */
+}
 
-      li {
-        display: inline-block; /* Display list items inline for horizontal layout */
-        margin: 10px; /* Add space between list items */
-      }
+li {
+  margin: 0.5rem;
+}
 
-      a {
-        color: #007bff; /* Set link color to blue */
-        text-decoration: none; /* Remove underline from links */
-      }
+a {
+  color: #3498db; /* More subdued blue */
+  text-decoration: none;
+}
 
-      a:hover {
-        color: #0056b3; /* Change link color on hover */
-        text-decoration: underline; /* Add underline on hover */
-      }
+a:hover {
+  color: #2980b9; /* Darker blue on hover */
+  text-decoration: underline;
+}
 
-      .you-are-here {
-        font-weight: bold; /* Make the "you are here" link bold */
-      }
+.you-are-here {
+  font-weight: bold;
+}
+
+/* Media Queries (Example for mobile) */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
