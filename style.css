@@ -1,44 +1,46 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  margin: 2rem;
+  font-family: "Open Sans", sans-serif, Arial, sans-serif; /* Added fallback fonts */
+  margin: 2rem auto; /* Center the content horizontally */
+  max-width: 800px; /* Limit content width for better readability */
   background-color: #f0f0f0; /* Light gray background */
+  padding: 0 1rem; /* Add padding to the sides */
 }
 
 .logo {
   text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 2rem; /* Increased margin for better separation */
+  font-size: 3rem; /* Increased font size for emphasis */
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increased margin for better separation */
 }
 
 .profile-pic {
   display: block;
-  margin: 0 auto 1rem; /* Center and add some margin below */
+  margin: 0 auto 2rem; /* Center and add more margin below */
   width: 150px;
   height: 150px;
   border-radius: 50%; /* Round profile picture */
 }
 
 nav {
-  background-color: #3498db; /* Light blue navigation bar */
+  background-color: #2ecc71; /* Green navigation bar for a fresh look */
   color: white;
-  padding: 1rem;
+  padding: 1rem 0; /* Added padding top and bottom */
 }
 
 nav ul {
   display: flex; /* Use flexbox for horizontal layout */
-  justify-content: space-between; /* Space out navigation items */
+  justify-content: center; /* Center-align navigation items */
   margin: 0;
   padding: 0;
 }
 
 nav li {
   list-style: none;
-  margin: 0 1rem; /* Add some margin between list items */
+  margin: 0 1.5rem; /* Increased margin between list items */
 }
 
 a {
@@ -47,10 +49,11 @@ a {
 }
 
 a:hover {
-  color: #2980b9; /* Darker blue on hover */
+  color: #27ae60; /* Darker green on hover */
   text-decoration: underline;
 }
 
 .about, .skills, .projects, .contact {
-  padding: 2rem 0;
-  border-bottom: 1px solid #ddd; /* Add a subtle border between sections */
+  padding: 3rem 0; /* Increased padding top and bottom */
+  border-bottom: 2px solid #ddd; /* Thicker border between sections */
+}
