@@ -11,13 +11,13 @@ function insertCommonLinks() {
     { text: "Ilya's Page", url: "https://gulkily.github.io/" },
   ];
 
-  // Loop through the links array and create anchor elements using forEach
-  links.forEach((link) => {
-    const a = document.createElement("a");
-    a.textContent = link.text;
-    a.href = link.url;
-    linkContainer.appendChild(a);
-  });
+  // Loop through the links array and create anchor elements
+  for (let i = 0; i < links.length; i++) {
+    const link = document.createElement("a");
+    link.textContent = links[i].text;
+    link.href = links[i].url;
+    linkContainer.appendChild(link);
+  }
 
   // Get the body element
   const body = document.body;
