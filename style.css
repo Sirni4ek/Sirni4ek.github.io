@@ -1,36 +1,48 @@
 body {
-  font-family: "Open Sans", sans-serif; /* Modern font from Google Fonts */
-  margin: 2rem; /* Use rem unit for responsive scaling */
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem;
+  background-color: #f0f0f0; /* Light gray background */
 }
 
-h1,
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 2.5rem; /* Larger main heading */
+.profile-pic {
+  display: block;
+  margin: 0 auto 1rem; /* Center and add some margin below */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Round profile picture */
 }
 
-p {
-  line-height: 1.6;
+nav {
+  background-color: #3498db; /* Light blue navigation bar */
+  color: white;
+  padding: 1rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+nav ul {
   display: flex; /* Use flexbox for horizontal layout */
-  justify-content: center; /* Center align items */
+  justify-content: space-between; /* Space out navigation items */
+  margin: 0;
+  padding: 0;
 }
 
-li {
-  margin: 0.5rem;
+nav li {
+  list-style: none;
+  margin: 0 1rem; /* Add some margin between list items */
 }
 
 a {
-  color: #3498db; /* More subdued blue */
+  color: inherit; /* Inherit color from parent (nav) */
   text-decoration: none;
 }
 
@@ -39,13 +51,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.you-are-here {
-  font-weight: bold;
-}
-
-/* Media Queries (Example for mobile) */
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
+.about, .skills, .projects, .contact {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd; /* Add a subtle border between sections */
