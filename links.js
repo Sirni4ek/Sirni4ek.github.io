@@ -16,6 +16,7 @@ function insertCommonLinks() {
     const linkElement = document.createElement("a");
     linkElement.textContent = link.text;
     linkElement.href = link.url;
+    linkElement.style.marginRight = "10px"; // Add some spacing between links
     linkContainer.appendChild(linkElement);
   }
 
