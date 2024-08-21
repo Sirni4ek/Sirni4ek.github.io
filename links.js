@@ -8,7 +8,10 @@ function insertCommonLinks() {
     { text: "Dima's Page", url: "https://sirni4ek.github.io/" },
     { text: "Danya's Page", url: "https://danil357345.github.io/" },
     { text: "Solomiia's Page", url: "https://solomiia2098.github.io/" },
-    { text: "Ilya's Page", url: "https://gulkily.github.io/" }
+    { text: "Ilya's Page", url: "https://gulkily.github.io/" },
+    { text: "Terminology", url: "terminology.html" },  // Link to terminology.html
+    { text: "Commands", url: "commands.html" },        // Link to commands.html
+    { text: "FizzBuzz", url: "fizzbuzz.html" }         // Link to fizzbuzz.html
   ];
 
   // Loop through the links object and create anchor elements
