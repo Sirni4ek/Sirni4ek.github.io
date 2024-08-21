@@ -4,92 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dima's Programming Portfolio</title>
-    <style>
-        /* Устанавливаем отступы и размеры для всех элементов */
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        body {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            min-height: 100vh;
-        }
-        header, main, footer {
-            width: 100%;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-        }
-        nav ul li {
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-        main {
-            flex: 1;
-            width: 100%;
-        }
-        .about, .skills, .projects, .contact {
-            margin-bottom: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-        }
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10px;
-        }
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .footer-links ul li {
-            margin: 0 10px;
-        }
-        .footer-links ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -104,11 +19,11 @@
         </nav>
     </header>
     <main>
-        <section id="about" class="about">
+        <section id="about">
             <h2>About</h2>
             <p>Hi! I'm Dima, a passionate programmer eager to contribute my skills and enthusiasm to a challenging and rewarding role. I'm particularly interested in IT. This website showcases some of my projects and demonstrates my abilities.</p>
         </section>
-        <section id="skills" class="skills">
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Programming Languages: CSS, HTML, JavaScript, Perl, Python, Swift, and C++</li>
@@ -117,16 +32,15 @@
                 <li>Learning Agility: Eager to learn new technologies and adapt to changing environments.</li>
             </ul>
         </section>
-        <section id="projects" class="projects">
+        <section id="projects">
             <h2>Projects</h2>
-            <p>Take a look at some of my projects that demonstrate my skills:</p>
             <ul>
                 <li><a href="https://github.com/gulkily/leetcode">Leetcode Practice</a></li>
                 <li><a href="#">Project 1: [In progress]</a></li>
                 <li><a href="#">Project 2: [In progress]</a></li>
             </ul>
         </section>
-        <section id="contact" class="contact">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out to me for any opportunities or discussions. I'm available at <a href="https://sirni4ek.github.io/">https://sirni4ek.github.io/</a>.</p>
         </section>
