@@ -1,34 +1,33 @@
 function insertCommonLinks() {
-  // Create the container element for the links
   const linkContainer = document.createElement("nav");
-  linkContainer.classList.add("common-links"); // Add a class for styling
+  linkContainer.classList.add("common-links"); 
 
-  // Define the links as an object with link text and URL
   const links = [
     { text: "Dima's Page", url: "https://sirni4ek.github.io/" },
     { text: "Danya's Page", url: "https://danil357345.github.io/" },
     { text: "Solomiia's Page", url: "https://solomiia2098.github.io/" },
     { text: "Ilya's Page", url: "https://gulkily.github.io/" },
-    { text: "Terminology", url: "terminology.html" },  // Link to terminology.html
-    { text: "Commands", url: "commands.html" },        // Link to commands.html
-    { text: "FizzBuzz", url: "fizzbuzz.html" }         // Link to fizzbuzz.html
+    { text: "Terminology", url: "terminology.html" },  
+    { text: "Commands", url: "commands.html" },        
+    { text: "FizzBuzz", url: "fizzbuzz.html" },        
+    { text: "Sweden", url: "sweden.html" }             
   ];
 
-  // Loop through the links object and create anchor elements
+  
   for (const link of links) {
     const linkElement = document.createElement("a");
     linkElement.textContent = link.text;
     linkElement.href = link.url;
-    linkElement.style.marginRight = "10px"; // Add some spacing between links
+    linkElement.style.marginRight = "10px"; 
     linkContainer.appendChild(linkElement);
   }
 
-  // Get the body element
+  
   const body = document.body;
 
-  // Append the container element with links to the body
+ 
   body.appendChild(linkContainer);
 }
 
-// Call the function to insert links
+
 insertCommonLinks();
