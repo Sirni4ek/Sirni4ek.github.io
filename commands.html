@@ -1,114 +1,196 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>commands</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Dima's Programming Portfolio</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>commands</h1>
-    <h2>welcome</h2>
-    <p>
-      thank you for visiting my website!
-    </p>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Dima's Programming Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h2>cd</h2>
-<p>Change directory
-~
-.
-..</p>
+    <main>
+        <section id="commands">
+            <h2>Common Command Line Commands</h2>
+            <p>Welcome! Below is a collection of useful command line commands that you might find helpful in your programming journey.</p>
 
-<h2>pwd</h2>
-<p>Print working directory</p>
+            <div class="command-section">
+                <h3>cd</h3>
+                <p><strong>Change directory:</strong></p>
+                <pre><code>cd ~      # Home directory
+cd .      # Current directory
+cd ..     # Parent directory</code></pre>
+            </div>
 
-<h2>sh</h2>
-<p>Shell interpreter</p>
+            <div class="command-section">
+                <h3>pwd</h3>
+                <p><strong>Print working directory:</strong></p>
+                <pre><code>pwd</code></pre>
+            </div>
 
-<h2>mc
-<p>Midnight commander</h2>
-F4 to edit file
-F3 to view file
-quickview</p>
+            <div class="command-section">
+                <h3>sh</h3>
+                <p><strong>Shell interpreter:</strong></p>
+                <pre><code>sh</code></pre>
+            </div>
 
-<h2>ls
-<p>List directory</h2>
-ex: ls *.txt
-ex: ls -l
-ex: ls -lh
-ex: ls -la
-.dotfiles</p>
+            <div class="command-section">
+                <h3>mc</h3>
+                <p><strong>Midnight Commander:</strong></p>
+                <pre><code>F4      # Edit file
+F3      # View file
+quickview</code></pre>
+            </div>
 
-<h2>cat</h2>
-<p>Catenate (print or output)</p>
+            <div class="command-section">
+                <h3>ls</h3>
+                <p><strong>List directory contents:</strong></p>
+                <pre><code>ls *.txt   # List all .txt files
+ls -l      # Detailed list
+ls -lh     # Human-readable sizes
+ls -la     # Include hidden files (.dotfiles)</code></pre>
+            </div>
 
-<h2>STDIN/STDOUT</h2>
-<p>Standard in (input)
-standard out (output)</p>
+            <div class="command-section">
+                <h3>cat</h3>
+                <p><strong>Catenate (print or output) file contents:</strong></p>
+                <pre><code>cat filename.txt</code></pre>
+            </div>
 
-command line arguments
+            <div class="command-section">
+                <h3>STDIN/STDOUT</h3>
+                <p><strong>Standard input/output:</strong></p>
+                <pre><code># Standard in (input)
+# Standard out (output)</code></pre>
+            </div>
 
-<h2>sha1sum</h2>
-<p>Get the sha1 hash of a file or input</p>
+            <div class="command-section">
+                <h3>sha1sum</h3>
+                <p><strong>Get the sha1 hash of a file or input:</strong></p>
+                <pre><code>sha1sum filename.txt</code></pre>
+            </div>
 
-<h2>find</h2>
-<p>Find files in the filesystem
-find -type f    # list only files
-find -type d    # list only the directories
-find -name txt</p>
+            <div class="command-section">
+                <h3>find</h3>
+                <p><strong>Find files in the filesystem:</strong></p>
+                <pre><code>find -type f    # List only files
+find -type d    # List only directories
+find -name "*.txt"  # Find files by name</code></pre>
+            </div>
 
-<h2>grep</h2>
-<p>Search for text in files or STDIN
-^ beginning of line
-$ end of line</p>
+            <div class="command-section">
+                <h3>grep</h3>
+                <p><strong>Search for text in files or STDIN:</strong></p>
+                <pre><code>grep "pattern" filename.txt
+^  # Beginning of line
+$  # End of line</code></pre>
+            </div>
 
-<h2>wc</h2>
-<p>Word count / line count</p>
+            <div class="command-section">
+                <h3>wc</h3>
+                <p><strong>Word count / line count:</strong></p>
+                <pre><code>wc filename.txt</code></pre>
+            </div>
 
-<h2>less</h2>
-<p>Allows working with a lot of output
-space to go next a page
-page up / page down
-arrow keys
-q to quit</p>
+            <div class="command-section">
+                <h3>less</h3>
+                <p><strong>View large output one screen at a time:</strong></p>
+                <pre><code>less filename.txt
+# Controls:
+space    # Next page
+page up  # Page up
+page down  # Page down
+q       # Quit</code></pre>
+            </div>
 
-<h2>echo</h2>
-<p>Print something</p>
+            <div class="command-section">
+                <h3>echo</h3>
+                <p><strong>Print something to the terminal:</strong></p>
+                <pre><code>echo "Hello, world!"</code></pre>
+            </div>
 
-<h2>ps</h2>
-<p>Process list
-ex: ps aux</p>
+            <div class="command-section">
+                <h3>ps</h3>
+                <p><strong>Process list:</strong></p>
+                <pre><code>ps aux</code></pre>
+            </div>
 
-<h2>git</h2>
-<p>Git program to do versioning</p>
+            <div class="command-section">
+                <h3>git</h3>
+                <p><strong>Version control system:</strong></p>
+                <pre><code>git status
+git add .
+git commit -m "Your message"</code></pre>
+            </div>
 
-<h2>hexdump</h2>
-<p>Display contents of file in hexadecimal code</p>
+            <div class="command-section">
+                <h3>hexdump</h3>
+                <p><strong>Display file contents in hexadecimal:</strong></p>
+                <pre><code>hexdump filename.bin</code></pre>
+            </div>
 
-<h2>cut</h2>
-<p>Split output into multiple fields using a divider
-              ,---- fields we want
-              v
-cut -d ',' -f 2-
-        ^--- divider</p>
+            <div class="command-section">
+                <h3>cut</h3>
+                <p><strong>Split output into fields using a delimiter:</strong></p>
+                <pre><code>cut -d ',' -f 2- filename.csv
+# -d ','  # Delimiter is comma
+# -f 2-   # Fields we want (starting from 2)</code></pre>
+            </div>
 
-<h2>xargs</h2>
-<p>Take STDOUT and use it as arguments for another command</p>
+            <div class="command-section">
+                <h3>xargs</h3>
+                <p><strong>Use STDOUT as arguments for another command:</strong></p>
+                <pre><code>echo "file1 file2 file3" | xargs rm</code></pre>
+            </div>
 
-<h2>diff</h2>
-<p>Compare two files</p>
+            <div class="command-section">
+                <h3>diff</h3>
+                <p><strong>Compare two files:</strong></p>
+                <pre><code>diff file1.txt file2.txt</code></pre>
+            </div>
 
-<h2>tr</h2>
-<p>Translate input to different format and output</p>
+            <div class="command-section">
+                <h3>tr</h3>
+                <p><strong>Translate input to a different format:</strong></p>
+                <pre><code>echo "Hello" | tr 'a-z' 'A-Z'</code></pre>
+            </div>
 
-<h2>awk</h2>
-<p>Processes text data, searches for patterns, performs actions</p>
+            <div class="command-section">
+                <h3>awk</h3>
+                <p><strong>Process text data, search patterns, perform actions:</strong></p>
+                <pre><code>awk '{print $1}' filename.txt</code></pre>
+            </div>
 
-<h2>time</h2>
-<p>Tracks how long it takes to run a command</p>
+            <div class="command-section">
+                <h3>time</h3>
+                <p><strong>Track how long it takes to run a command:</strong></p>
+                <pre><code>time command</code></pre>
+            </div>
+        </section>
+    </main>
 
-
-     
     <footer>
-      <a href="https://github.com/Sirni4ek/Sirni4ek.github.io/">source code</a>
+        <div class="footer-links">
+            <h3>Project Links</h3>
+            <ul>
+                <li><a href="terminology.html">Terminology</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="fizzbuzz.html">FizzBuzz</a></li>
+                <li><a href="sweden.html">Sweden</a></li>
+                <li><a href="pycharm.html">PyCharm IDE</a></li>
+            </ul>
+        </div>
+        <p>&copy; Dima [2024] | <a href="https://github.com/Sirni4ek/Sirni4ek.github.io/">Source Code</a></p>
     </footer>
-  </body>
+</body>
 </html>
