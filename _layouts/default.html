@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1 class="logo">{{ site.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.title }} [2024]</p>
+        <div class="footer-links">
+            <h3>Project Links</h3>
+            <ul>
+                <li><a href="terminology.html">Terminology</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="fizzbuzz.html">FizzBuzz</a></li>
+                <li><a href="sweden.html">Sweden</a></li>
+                <li><a href="pycharm.html">PyCharm IDE</a></li>
+                <li><a href="webbrowsers.html">Top 3 Web Browsers</a></li>
+                <li><a href="github-pages.html">GitHub Pages Guide</a></li>
+            </ul>
+            <h3>External Sites</h3>
+            <ul>
+                <li><a href="https://sirni4ek.github.io/">Dima's Page</a></li>
+                <li><a href="https://danil357345.github.io/">Danya's Page</a></li>
+                <li><a href="https://solomiia2098.github.io/">Solomiia's Page</a></li>
+                <li><a href="https://gulkily.github.io/">Ilya's Page</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
