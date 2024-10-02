@@ -1,0 +1,6 @@
+title: "Dima's Programming Portfolio"
+description: "A portfolio showcasing Dima's programming projects and skills."
+baseurl: "" 
+url: "https://username.github.io" 
+theme: minima 
+markdown: kramdown
